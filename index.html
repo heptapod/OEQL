@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yeonhee Choi</title>
+  <meta name="description" content="Yeonhee Choi – Playful Digital-Physical HCI, XR & Tangible Interfaces, Trauma-/Neurodiversity-informed Inclusive Design" />
+  <meta property="og:title" content="Yeonhee Choi – Portfolio" />
+  <meta property="og:description" content="Playful Digital-Physical HCI | XR & Tangible Interfaces | Trauma-/Neurodiversity-informed Inclusive Design" />
+  <meta property="og:type" content="website" />
+  <meta name="color-scheme" content="light" />
+  <style>
+    /* Base reset */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #fff;
+      color: #000;
+      line-height: 1.6;
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1 { font-size: 48px; font-weight: 300; margin-bottom: 40px; letter-spacing: -0.02em; }
+
+    .keywords { font-size: 18px; margin-bottom: 40px; font-weight: 300; line-height: 1.8; }
+
+    .description { font-size: 16px; margin-bottom: 60px; line-height: 1.8; font-weight: 300; max-width: 860px; }
+
+    .image-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-bottom: 60px; max-width: 900px; }
+
+    .project-item { display: flex; flex-direction: column; }
+
+    .project-title { font-size: 14px; font-weight: 400; margin-bottom: 12px; line-height: 1.4; letter-spacing: 0.01em; min-height: 2.8em; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+    .image-link { width: 100%; aspect-ratio: 2 / 1; background-color: #f7f7f7; border: 1px solid #e6e6e6; display: block; overflow: hidden; border-radius: 8px; }
+
+    .project-card { display: flex; flex-direction: column; gap: 12px; text-decoration: none; color: inherit; cursor: pointer; transition: opacity 0.25s ease; }
+    .project-card:hover { opacity: 0.78; }
+
+    .image-link:hover { opacity: 0.78; }
+
+    .image-link img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .footer { font-size: 14px; font-weight: 300; }
+    .footer a { color: #000; text-decoration: underline; }
+    .footer a:hover { opacity: 0.65; }
+
+    .admin-toggle { position: fixed; left: 18px; bottom: 18px; font: 12px/1 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; padding: 8px 12px; border-radius: 999px; border: 1px solid #d9d9d9; background: #fff; cursor: pointer; box-shadow: 0 4px 18px rgba(0,0,0,0.08); }
+    .admin-panel { position: fixed; left: 18px; bottom: 58px; width: 300px; max-width: calc(100% - 36px); background: #fff; border: 1px solid #e6e6e6; border-radius: 14px; box-shadow: 0 12px 34px rgba(0,0,0,0.12); padding: 12px; display: none; }
+    .admin-panel.open { display: block; }
+    .admin-panel h3 { margin: 6px 0 10px; font-size: 14px; font-weight: 600; }
+    .uploader { display: grid; gap: 10px; }
+    .uploader label { font-size: 12px; font-weight: 500; }
+    .uploader input[type="file"] { width: 100%; padding: 6px; border: 1px dashed #ccc; border-radius: 8px; background: #fafafa; }
+    .uploader .row { display: grid; gap: 6px; }
+    .uploader .btns { margin-top: 8px; display: flex; gap: 8px; }
+    .btn { padding: 6px 10px; border-radius: 8px; border: 1px solid #ddd; background: #fff; cursor: pointer; font-size: 12px; }
+
+    @media (max-width: 768px) {
+      body { padding: 40px 20px; }
+      h1 { font-size: 36px; }
+      .image-grid { grid-template-columns: 1fr; gap: 30px; max-width: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Yeonhee Choi</h1>
+    <div class="keywords">
+      Playful Digital-Physical HCI<br />
+      XR & Tangible Interfaces<br />
+      Trauma-Informed, Neurodiversity-Informed Inclusive Design
+    </div>
+  </header>
+
+  <main>
+    <section aria-label="About">
+      <p class="description">
+        I am a practice-based HCI researcher and designer exploring the intersection of neurodiversity, complex trauma, and community-based participatory design for education, mental health care, and forensic interviewing. My work focuses on trauma-informed and neurodiversity-informed inclusive design, investigating pathways to post-trauma recovery and empowerment of child and adult survivors. I create play-based tangible toolkits using physical computing, XR, and digital fabrication technologies, embracing digital-physical hybridity to enable safe, sensory-rich, and embodied engagement.
+      </p>
+    </section>
+
+    <section aria-label="Projects" class="image-grid">
+      <article class="project-item">
+        <a class="project-card" href="https://oeqs.itch.io/you-will-know-me" target="_blank" rel="noopener noreferrer">
+          <h2 class="project-title">You Will Know Me: From Silence to Story</h2>
+          <div class="image-link">
+            <img id="img1" alt="You Will Know Me project image" loading="lazy" decoding="async"
+                 src="images/you-will-know-me.jpg" />
+          </div>
+        </a>
+      </article>
+
+      <article class="project-item">
+        <a class="project-card" href="https://heptapod.github.io/Yeonhee.C/" target="_blank" rel="noopener noreferrer">
+          <h2 class="project-title">Wish You Were Here XR: Invisible Emergencies</h2>
+          <div class="image-link">
+            <img id="img2" alt="Wish You Were Here XR project image" loading="lazy" decoding="async"
+                 src="images/wish-you-were-here.jpg" />
+          </div>
+        </a>
+      </article>
+
+      <article class="project-item">
+        <a class="project-card" href="https://docs.google.com/document/d/19Bqme7t1mrQe3FzpXcik-IaoTb_ZLRPuJL2CqDTXGkc/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">
+          <h2 class="project-title">Pruney Fingers: A Tale from an Unfinished Study</h2>
+          <div class="image-link">
+            <img id="img3" alt="Pruney Fingers project image" loading="lazy" decoding="async"
+                 src="images/pruney-fingers.jpg" />
+          </div>
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer" aria-label="Footer">
+    CV is provided upon request, and <a href="https://example.com/about" target="_blank" rel="noopener noreferrer">here</a>'s more about me
+  </footer>
+
+  <button class="admin-toggle" type="button" aria-controls="adminPanel" aria-expanded="false" title="Swap images (local)">⚙️ Images</button>
+  <aside id="adminPanel" class="admin-panel" aria-hidden="true" role="dialog" aria-label="Local image overrides">
+    <h3>Replace images (local only)</h3>
+    <div class="uploader">
+      <div class="row">
+        <label for="file1">Project 1</label>
+        <input id="file1" type="file" accept="image/*" />
+      </div>
+      <div class="row">
+        <label for="file2">Project 2</label>
+        <input id="file2" type="file" accept="image/*" />
+      </div>
+      <div class="row">
+        <label for="file3">Project 3</label>
+        <input id="file3" type="file" accept="image/*" />
+      </div>
+      <div class="btns">
+        <button id="resetBtn" class="btn" type="button">Reset</button>
+        <button id="closeBtn" class="btn" type="button">Close</button>
+      </div>
+    </div>
+  </aside>
+
+  <script>
+    (function() {
+      const q = new URLSearchParams(window.location.search);
+      const els = [document.getElementById('img1'), document.getElementById('img2'), document.getElementById('img3')];
+
+      // 1) Querystring override (?img1=URL&img2=URL&img3=URL)
+      els.forEach((img, i) => {
+        if (!img) return;
+        const key = `img${i+1}`;
+        const url = q.get(key);
+        if (url) img.src = url;
+      });
+
+      // 2) LocalStorage override (from uploader)
+      els.forEach((img, i) => {
+        if (!img) return;
+        const key = `yc_local_img_${i+1}`;
+        const saved = localStorage.getItem(key);
+        if (saved) img.src = saved;
+      });
+
+      // Admin panel logic
+      const panel = document.getElementById('adminPanel');
+      const toggle = document.querySelector('.admin-toggle');
+      const inputs = [document.getElementById('file1'), document.getElementById('file2'), document.getElementById('file3')];
+      const resetBtn = document.getElementById('resetBtn');
+      const closeBtn = document.getElementById('closeBtn');
+
+      const openPanel = () => { panel.classList.add('open'); panel.setAttribute('aria-hidden', 'false'); toggle.setAttribute('aria-expanded', 'true'); };
+      const closePanel = () => { panel.classList.remove('open'); panel.setAttribute('aria-hidden', 'true'); toggle.setAttribute('aria-expanded', 'false'); };
+
+      toggle.addEventListener('click', () => panel.classList.contains('open') ? closePanel() : openPanel());
+      closeBtn.addEventListener('click', closePanel);
+
+      inputs.forEach((input, i) => {
+        input.addEventListener('change', () => {
+          const file = input.files && input.files[0];
+          if (!file) return;
+          const reader = new FileReader();
+          reader.onload = e => {
+            const dataUrl = e.target.result;
+            const key = `yc_local_img_${i+1}`;
+            localStorage.setItem(key, dataUrl);
+            if (els[i]) els[i].src = dataUrl;
+          };
+          reader.readAsDataURL(file);
+        });
+      });
+
+      resetBtn.addEventListener('click', () => {
+        ['yc_local_img_1','yc_local_img_2','yc_local_img_3'].forEach(k => localStorage.removeItem(k));
+        window.location.reload();
+      });
+    })();
+  </script>
+
+  <script>
+    (function attachOpenHandler(){
+      document.addEventListener('click', function(e){
+        const a = e.target.closest('a[target="_blank"]');
+        if (!a) return;
+        e.preventDefault();
+        try { window.open(a.href, '_blank', 'noopener,noreferrer'); }
+        catch(err) { try { location.href = a.href; } catch(_){} }
+      });
+    })();
+  </script>
+</body>
+</html>

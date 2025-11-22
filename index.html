@@ -26,17 +26,33 @@
 
     h1 { font-size: 48px; font-weight: bold; margin-bottom: 40px; letter-spacing: -0.02em; }
 
-    .keywords { font-size: 18px; margin-bottom: 40px; font-weight: 300; line-height: 1.8; }
+    header { display: block; margin-bottom: 40px; }
 
-    .research-question { font-size: 16px; margin-bottom: 60px; font-weight: bold; line-height: 1.8; }
+    .keywords { font-size: 18px; margin-bottom: 60px; font-weight: 300; line-height: 1.8; }
 
-    .about-section { display: flex; flex-direction: column; align-items: center; text-align: center; }
+    main { margin-top: 60px; }
 
-    .profile-image { width: 360px; height: 360px; border-radius: 50%; object-fit: cover; margin-bottom: 30px; }
+    .research-question { font-size: 14px; margin-bottom: 0; font-weight: bold; line-height: 1.6; border: 1px solid #000; padding: 20px; }
 
-    .metoo-images { display: flex; gap: 30px; justify-content: center; margin-bottom: 60px; }
+    .research-line { width: 1px; height: 50px; background: #000; margin: 0 auto 0; }
 
-    .metoo-circle { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 1px solid #e6e6e6; }
+    .research-line-bottom { width: 1px; height: 50px; background: #000; margin: 0 auto 0; }
+
+    .horizontal-line { width: 100px; height: 1px; background: #000; margin: 0 auto 80px; }
+
+    .profile-image { width: 360px; height: 360px; border-radius: 50%; object-fit: cover; margin-bottom: 30px; margin-top: 0; float: right; margin-left: 40px; }
+
+    .metoo-images { display: flex; gap: 20px; justify-content: center; align-items: center; margin-bottom: 0; flex-wrap: wrap; position: relative; }
+
+    .metoo-circle { border-radius: 50%; object-fit: cover; border: 1px solid #e6e6e6; position: relative; }
+
+    .metoo-circle:nth-child(1) { width: 100px; height: 100px; }
+
+    .metoo-circle:nth-child(2) { width: 160px; height: 160px; }
+
+    .metoo-circle:nth-child(3) { width: 80px; height: 80px; margin-top: 120px; }
+
+    .metoo-circle:nth-child(4) { width: 110px; height: 110px; margin-top: -30px; }
 
     .description { font-size: 16px; margin-bottom: 60px; line-height: 1.8; font-weight: 300; max-width: 860px; }
 
@@ -71,29 +87,36 @@
 <body>
   <header>
     <h1>Yeonhee Choi</h1>
-    <div class="keywords">
-      Playful Digital-Physical HCI<br />
-      XR & Tangible Interfaces<br />
-      Trauma-Informed, Neurodiversity-Informed Inclusive Design
-    </div>
-    <div class="research-question">
-      <strong>Could a trauma-informed, neurodiversity-informed human–AI play interaction help self-disclosure and healing of survivors who kept silence, creating ripple effect like #MeToo did?</strong>
-    </div>
+    <img class="profile-image" src="profile.jpg" alt="Yeonhee Choi profile photo" />
   </header>
+
+  <div class="keywords">
+    Playful Digital-Physical HCI<br />
+    XR & Tangible Interfaces<br />
+    Trauma-Informed, Neurodiversity-Informed Inclusive Design
+  </div>
 
   <main>
     <section aria-label="About" class="about-section">
-      <img class="profile-image" src="profile.jpg" alt="Yeonhee Choi profile photo" />
+      <p class="description">
+        I am a practice-based HCI researcher and designer exploring the intersection of neurodiversity, complex trauma, and community-based participatory design for education, mental health care, and forensic interviewing. My work focuses on trauma-informed and neurodiversity-informed inclusive design, investigating pathways to post-trauma recovery and empowerment of child and adult survivors. I create play-based tangible toolkits using physical computing, XR, and digital fabrication technologies, embracing digital-physical hybridity to enable safe, sensory-rich, and embodied engagement.
+      </p>
       <div class="metoo-images">
         <img class="metoo-circle" src="metoo1.jpg" alt="MeToo project image 1" />
         <img class="metoo-circle" src="metoo2.jpg" alt="MeToo project image 2" />
         <img class="metoo-circle" src="metoo3.jpg" alt="MeToo project image 3" />
         <img class="metoo-circle" src="metoo4.jpg" alt="MeToo project image 4" />
       </div>
-      <p class="description">
-        I am a practice-based HCI researcher and designer exploring the intersection of neurodiversity, complex trauma, and community-based participatory design for education, mental health care, and forensic interviewing. My work focuses on trauma-informed and neurodiversity-informed inclusive design, investigating pathways to post-trauma recovery and empowerment of child and adult survivors. I create play-based tangible toolkits using physical computing, XR, and digital fabrication technologies, embracing digital-physical hybridity to enable safe, sensory-rich, and embodied engagement.
-      </p>
     </section>
+
+    <div class="research-line"></div>
+
+    <div class="research-question">
+      <strong>Could a trauma-informed, neurodiversity-informed human–AI play interaction help self-disclosure and healing of survivors who kept silence, creating ripple effect like #MeToo did?</strong>
+    </div>
+
+    <div class="research-line-bottom"></div>
+    <div class="horizontal-line"></div>
 
     <section aria-label="Projects" class="image-grid">
       <article class="project-item">

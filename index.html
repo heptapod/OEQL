@@ -24,13 +24,19 @@
       margin: 0 auto;
     }
 
-    h1 { font-size: 48px; font-weight: 300; margin-bottom: 40px; letter-spacing: -0.02em; }
+    h1 { font-size: 48px; font-weight: bold; margin-bottom: 40px; letter-spacing: -0.02em; }
 
     .keywords { font-size: 18px; margin-bottom: 40px; font-weight: 300; line-height: 1.8; }
 
+    .research-question { font-size: 16px; margin-bottom: 60px; font-weight: bold; line-height: 1.8; }
+
     .about-section { display: flex; flex-direction: column; align-items: center; text-align: center; }
 
-    .profile-image { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 30px; }
+    .profile-image { width: 360px; height: 360px; border-radius: 50%; object-fit: cover; margin-bottom: 30px; }
+
+    .metoo-images { display: flex; gap: 30px; justify-content: center; margin-bottom: 60px; }
+
+    .metoo-circle { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 1px solid #e6e6e6; }
 
     .description { font-size: 16px; margin-bottom: 60px; line-height: 1.8; font-weight: 300; max-width: 860px; }
 
@@ -38,7 +44,7 @@
 
     .project-item { display: flex; flex-direction: column; }
 
-    .project-title { font-size: 14px; font-weight: 400; margin-bottom: 12px; line-height: 1.4; letter-spacing: 0.01em; min-height: 2.8em; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .project-title { font-size: 18px; font-weight: bold; margin-bottom: 12px; line-height: 1.4; letter-spacing: 0.01em; min-height: 2.8em; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 
     .image-link { width: 100%; aspect-ratio: 1.5 / 1; background-color: #f7f7f7; border: 1px solid #e6e6e6; display: block; overflow: hidden; border-radius: 8px; }
 
@@ -79,11 +85,19 @@
       XR & Tangible Interfaces<br />
       Trauma-Informed, Neurodiversity-Informed Inclusive Design
     </div>
+    <div class="research-question">
+      <strong>Could a trauma-informed, neurodiversity-informed human–AI play interaction help self-disclosure and healing of survivors who kept silence, creating ripple effect like #MeToo did?</strong>
+    </div>
   </header>
 
   <main>
     <section aria-label="About" class="about-section">
       <img class="profile-image" src="profile.jpg" alt="Yeonhee Choi profile photo" />
+      <div class="metoo-images">
+        <img class="metoo-circle" src="metoo1.jpg" alt="MeToo project image 1" />
+        <img class="metoo-circle" src="metoo2.jpg" alt="MeToo project image 2" />
+        <img class="metoo-circle" src="metoo3.jpg" alt="MeToo project image 3" />
+      </div>
       <p class="description">
         I am a practice-based HCI researcher and designer exploring the intersection of neurodiversity, complex trauma, and community-based participatory design for education, mental health care, and forensic interviewing. My work focuses on trauma-informed and neurodiversity-informed inclusive design, investigating pathways to post-trauma recovery and empowerment of child and adult survivors. I create play-based tangible toolkits using physical computing, XR, and digital fabrication technologies, embracing digital-physical hybridity to enable safe, sensory-rich, and embodied engagement.
       </p>

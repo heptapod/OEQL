@@ -24,6 +24,18 @@
       margin: 0 auto;
     }
 
+    nav { display: flex; gap: 30px; align-items: center; margin-bottom: 60px; flex-wrap: wrap; }
+
+    .nav-links { display: flex; gap: 30px; }
+
+    .nav-links a { font-size: 14px; text-decoration: none; color: #000; padding-bottom: 4px; transition: opacity 0.25s ease; }
+
+    .nav-links a:hover { opacity: 0.65; }
+
+    .social-link { display: flex; align-items: center; gap: 8px; font-size: 14px; text-decoration: none; color: #000; padding-bottom: 4px; transition: opacity 0.25s ease; }
+
+    .social-link:hover { opacity: 0.65; }
+
     h1 { font-size: 48px; font-weight: bold; margin-bottom: 40px; letter-spacing: -0.02em; }
 
     header { display: block; margin-bottom: 40px; }
@@ -58,8 +70,6 @@
     .image-link img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
     .footer { font-size: 14px; font-weight: 300; }
-    .footer a { color: #000; text-decoration: underline; }
-    .footer a:hover { opacity: 0.65; }
 
     @media (max-width: 768px) {
       body { padding: 40px 20px; }
@@ -70,6 +80,19 @@
   </style>
 </head>
 <body>
+  <nav>
+    <div class="nav-links">
+      <a href="about.html">About</a>
+      <a href="#cv">CV</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#awards">Awards and Grants</a>
+    </div>
+    <a href="https://www.linkedin.com/in/yeonhee-c-10a000135" class="social-link" target="_blank" rel="noopener noreferrer">
+      <span>in</span> LinkedIn
+    </a>
+  </nav>
+
   <header>
     <h1>Yeonhee Choi</h1>
     <img class="profile-image" src="profile.jpg" alt="Yeonhee Choi profile photo" />
@@ -137,7 +160,7 @@
   </main>
 
   <footer class="footer" aria-label="Footer">
-    CV is provided upon request, and <a href="about.html">here</a>'s more about me
+    © Yeonhee Choi, 2025. All rights reserved.
   </footer>
 
   <script>

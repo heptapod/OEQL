@@ -36,17 +36,21 @@
 
     .description { font-size: 16px; margin-bottom: 60px; line-height: 1.8; font-weight: 300; max-width: 860px; }
 
-    .image-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-bottom: 60px; width: 100%; max-width: none; }
+    .image-grid { display: flex; flex-direction: column; gap: 60px; margin-bottom: 60px; width: 100%; max-width: none; }
 
-    .project-item { display: flex; flex-direction: column; }
+    .project-item { display: flex; flex-direction: row; gap: 40px; align-items: flex-start; }
 
-    .project-title { font-size: 18px; font-weight: bold; margin-bottom: 12px; line-height: 1.4; letter-spacing: 0.01em; min-height: 2.8em; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .project-content { flex: 1; }
+
+    .project-image-wrapper { flex-shrink: 0; min-width: 300px; }
+
+    .project-title { font-size: 18px; font-weight: bold; margin-bottom: 12px; line-height: 1.4; letter-spacing: 0.01em; }
 
     .project-description { font-size: 14px; line-height: 1.6; color: #666; font-weight: 300; }
 
     .image-link { width: 100%; aspect-ratio: 1.5 / 1; background-color: #f7f7f7; border: 1px solid #e6e6e6; display: block; overflow: hidden; border-radius: 8px; }
 
-    .project-card { display: flex; flex-direction: column; gap: 12px; text-decoration: none; color: inherit; cursor: pointer; transition: opacity 0.25s ease; }
+    .project-card { display: flex; flex-direction: column; gap: 0; text-decoration: none; color: inherit; cursor: pointer; transition: opacity 0.25s ease; }
     .project-card:hover { opacity: 0.78; }
 
     .image-link:hover { opacity: 0.78; }
@@ -60,7 +64,8 @@
     @media (max-width: 768px) {
       body { padding: 40px 20px; }
       h1 { font-size: 36px; }
-      .image-grid { grid-template-columns: 1fr; gap: 30px; max-width: none; }
+      .project-item { flex-direction: column; gap: 20px; }
+      .project-image-wrapper { min-width: auto; }
     }
   </style>
 </head>
@@ -85,36 +90,48 @@
 
     <section aria-label="Projects" class="image-grid">
       <article class="project-item">
-        <a class="project-card" href="https://oeqs.itch.io/you-will-know-me" target="_blank" rel="noopener noreferrer">
+        <div class="project-image-wrapper">
+          <a class="project-card" href="https://oeqs.itch.io/you-will-know-me" target="_blank" rel="noopener noreferrer">
+            <div class="image-link">
+              <img id="img1" alt="You Will Know Me project image" loading="lazy" decoding="async"
+                   src="you-will-know-me.jpg" />
+            </div>
+          </a>
+        </div>
+        <div class="project-content">
           <h2 class="project-title">You Will Know Me: From Silence to Story</h2>
-          <div class="image-link">
-            <img id="img1" alt="You Will Know Me project image" loading="lazy" decoding="async"
-                 src="you-will-know-me.jpg" />
-          </div>
-        </a>
-        <p class="project-description">A multi-sensory interactive puzzle combining physical wooden components with digital interaction, designed through participatory co-design for trauma-informed healing and empowerment.</p>
+          <p class="project-description">A multi-sensory interactive puzzle combining physical wooden components with digital interaction, designed through participatory co-design for trauma-informed healing and empowerment.</p>
+        </div>
       </article>
 
       <article class="project-item">
-        <a class="project-card" href="https://heptapod.github.io/Yeonhee.C/" target="_blank" rel="noopener noreferrer">
+        <div class="project-image-wrapper">
+          <a class="project-card" href="https://heptapod.github.io/Yeonhee.C/" target="_blank" rel="noopener noreferrer">
+            <div class="image-link">
+              <img id="img2" alt="Wish You Were Here XR project image" loading="lazy" decoding="async"
+                   src="wish-you-were-here.jpg" />
+            </div>
+          </a>
+        </div>
+        <div class="project-content">
           <h2 class="project-title">Wish You Were Here XR: Invisible Emergencies</h2>
-          <div class="image-link">
-            <img id="img2" alt="Wish You Were Here XR project image" loading="lazy" decoding="async"
-                 src="wish-you-were-here.jpg" />
-          </div>
-        </a>
-        <p class="project-description">Interactive Augmented Reality experience connected with physical stimuli, designed as an accessible XR-based tool for managing sensory overload and trauma-related crises.</p>
+          <p class="project-description">Interactive Augmented Reality experience connected with physical stimuli, designed as an accessible XR-based tool for managing sensory overload and trauma-related crises.</p>
+        </div>
       </article>
 
       <article class="project-item">
-        <a class="project-card" href="https://docs.google.com/document/d/19Bqme7t1mrQe3FzpXcik-IaoTb_ZLRPuJL2CqDTXGkc/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <div class="project-image-wrapper">
+          <a class="project-card" href="https://docs.google.com/document/d/19Bqme7t1mrQe3FzpXcik-IaoTb_ZLRPuJL2CqDTXGkc/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">
+            <div class="image-link">
+              <img id="img3" alt="Pruney Fingers project image" loading="lazy" decoding="async"
+                   src="pruney-fingers.jpg" />
+            </div>
+          </a>
+        </div>
+        <div class="project-content">
           <h2 class="project-title">Pruney Fingers: A Tale of Us</h2>
-          <div class="image-link">
-            <img id="img3" alt="Pruney Fingers project image" loading="lazy" decoding="async"
-                 src="pruney-fingers.jpg" />
-          </div>
-        </a>
-        <p class="project-description">A multi-sensory, trans-media, and interactive storybook where you see the world through the eyes of a brave and curious girl hitting puberty while dealing with her trauma. She is conducting her very first research and it's rocky.</p>
+          <p class="project-description">A multi-sensory, trans-media, and interactive storybook where you see the world through the eyes of a brave and curious girl hitting puberty while dealing with her trauma. She is conducting her very first research and it's rocky.</p>
+        </div>
       </article>
     </section>
   </main>
@@ -122,9 +139,6 @@
   <footer class="footer" aria-label="Footer">
     CV is provided upon request, and <a href="about.html">here</a>'s more about me
   </footer>
-
-
-
 
   <script>
     (function() {

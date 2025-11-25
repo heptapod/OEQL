@@ -25,6 +25,12 @@
     .back-link a { color: #000; text-decoration: none; }
     .back-link a:hover { opacity: 0.65; }
 
+    .top-divider { border: none; border-top: 1px solid #000; margin: 40px 0 60px 0; }
+
+    .footer-divider { border: none; border-top: 1px solid #000; margin: 60px 0; }
+
+    .footer { font-size: 14px; font-weight: 300; }
+
     .page-title { font-size: 32px; font-weight: bold; margin-bottom: 30px; }
 
     .research-links { margin-bottom: 60px; font-size: 14px; }
@@ -49,7 +55,7 @@
 
     .presentations-gallery { display: flex; gap: 30px; justify-content: center; flex-wrap: wrap; }
 
-    .presentation-item { flex: 0 1 calc(33.333% - 20px); min-width: 150px; }
+    .presentation-item { flex: 0 1 calc(25% - 22.5px); min-width: 150px; }
 
     .presentation-item img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 4px; }
 
@@ -64,6 +70,8 @@
   <div class="back-link">
     <a href="index.html">← Back</a>
   </div>
+
+  <hr class="top-divider" />
 
   <h1 class="page-title">Publications and Presentations</h1>
 
@@ -93,7 +101,7 @@
   </section>
 
   <section class="section">
-    <h2 class="section-title">Talks and Presentations</h2>
+    <h2 class="section-title">Related Talks, Presentations, and exhibitions</h2>
 
     <div class="presentations-gallery">
       <div class="presentation-item">
@@ -108,7 +116,17 @@
         <img src="talk3.jpg" alt="ISTSS 25" />
         <p class="presentation-caption">International Society of Traumatic Stress Studies 25, Baltimore, MD</p>
       </div>
+      <div class="presentation-item">
+        <img src="talk4.jpg" alt="If games are the answer" />
+        <p class="presentation-caption">If games are the answer, what was the question? London</p>
+      </div>
     </div>
   </section>
+
+  <hr class="footer-divider" />
+
+  <footer class="footer">
+    © Yeonhee Choi, 2025
+  </footer>
 </body>
 </html>

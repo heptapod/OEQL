@@ -64,7 +64,7 @@
 
     .project-description { font-size: 16px; line-height: 1.8; color: #333; font-weight: 300; }
 
-    .image-link { width: 100%; aspect-ratio: 1.5 / 1; background-color: #f7f7f7; border: 1px solid #e6e6e6; display: block; overflow: hidden; border-radius: 8px; }
+    .image-link { width: 100%; aspect-ratio: 1.5 / 1; height: auto; background-color: #f7f7f7; border: 1px solid #e6e6e6; display: block; overflow: hidden; border-radius: 8px; }
 
     .project-card { display: flex; flex-direction: column; gap: 0; text-decoration: none; color: inherit; cursor: pointer; transition: opacity 0.25s ease; }
     .project-card:hover { opacity: 0.78; }
@@ -80,6 +80,7 @@
     @media (max-width: 768px) {
       body { padding: 40px 20px; }
       h1 { font-size: 36px; }
+      .profile-image { float: none; margin: 0 auto 30px; display: block; }
       .project-item { flex-direction: column; gap: 20px; }
       .project-image-wrapper { min-width: auto; }
     }

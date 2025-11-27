@@ -41,18 +41,15 @@
 
     .project-image-wrapper { flex-shrink: 0; min-width: 250px; max-width: 280px; }
 
+    .project-image { width: 100%; height: auto; display: block; border: 1px solid #e6e6e6; border-radius: 8px; }
+
     .project-title { font-size: 18px; font-weight: bold; margin-bottom: 12px; line-height: 1.4; letter-spacing: 0.01em; }
 
+    .project-title-link { text-decoration: none; color: inherit; }
+
+    .project-title-link:hover { opacity: 0.65; }
+
     .project-description { font-size: 16px; line-height: 1.8; color: #333; font-weight: 300; }
-
-    .image-link { width: 100%; aspect-ratio: 1.5 / 1; height: auto; background-color: #f7f7f7; border: 1px solid #e6e6e6; display: block; overflow: hidden; border-radius: 8px; }
-
-    .project-card { display: flex; flex-direction: column; gap: 0; text-decoration: none; color: inherit; cursor: pointer; transition: opacity 0.25s ease; }
-    .project-card:hover { opacity: 0.78; }
-
-    .image-link:hover { opacity: 0.78; }
-
-    .image-link img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
     @media (max-width: 768px) {
       body { padding: 40px 20px; }
@@ -73,45 +70,36 @@
   <section aria-label="Projects" class="image-grid">
     <article class="project-item">
       <div class="project-image-wrapper">
-        <a class="project-card" href="https://oeqs.itch.io/you-will-know-me" target="_blank" rel="noopener noreferrer">
-          <div class="image-link">
-            <img id="img1" alt="You Will Know Me project image" loading="lazy" decoding="async"
-                 src="you-will-know-me.jpg" />
-          </div>
-        </a>
+        <img class="project-image" alt="You Will Know Me project image" src="you-will-know-me.jpg">
       </div>
       <div class="project-content">
-        <h2 class="project-title">You Will Know Me: From Silence to Story</h2>
+        <a class="project-title-link" href="https://oeqs.itch.io/you-will-know-me" target="_blank" rel="noopener noreferrer">
+          <h2 class="project-title">You Will Know Me: From Silence to Story</h2>
+        </a>
         <p class="project-description">A multi-sensory interactive puzzle combining physical wooden components with digital interaction, designed through participatory co-design for trauma-informed healing and empowerment.</p>
       </div>
     </article>
 
     <article class="project-item">
       <div class="project-image-wrapper">
-        <a class="project-card" href="https://heptapod.github.io/Yeonhee.C/" target="_blank" rel="noopener noreferrer">
-          <div class="image-link">
-            <img id="img2" alt="Wish You Were Here XR project image" loading="lazy" decoding="async"
-                 src="wish-you-were-here.jpg" />
-          </div>
-        </a>
+        <img class="project-image" alt="Wish You Were Here XR project image" src="wish-you-were-here.jpg">
       </div>
       <div class="project-content">
-        <h2 class="project-title">Wish You Were Here XR: Invisible Emergencies</h2>
+        <a class="project-title-link" href="https://heptapod.github.io/Yeonhee.C/" target="_blank" rel="noopener noreferrer">
+          <h2 class="project-title">Wish You Were Here XR: Invisible Emergencies</h2>
+        </a>
         <p class="project-description">Interactive Augmented Reality experience connected with physical stimuli, designed as an accessible XR-based tool for managing sensory overload and trauma-related crises.</p>
       </div>
     </article>
 
     <article class="project-item">
       <div class="project-image-wrapper">
-        <a class="project-card" href="https://docs.google.com/document/d/19Bqme7t1mrQe3FzpXcik-IaoTb_ZLRPuJL2CqDTXGkc/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">
-          <div class="image-link">
-            <img id="img3" alt="Pruney Fingers project image" loading="lazy" decoding="async"
-                 src="pruney-fingers.jpg" />
-          </div>
-        </a>
+        <img class="project-image" alt="Pruney Fingers project image" src="pruney-fingers.jpg">
       </div>
       <div class="project-content">
-        <h2 class="project-title">Pruney Fingers: A Tale of Us</h2>
+        <a class="project-title-link" href="https://docs.google.com/document/d/19Bqme7t1mrQe3FzpXcik-IaoTb_ZLRPuJL2CqDTXGkc/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">
+          <h2 class="project-title">Pruney Fingers: A Tale of Us</h2>
+        </a>
         <p class="project-description">Access to information of my body, denied. Is representation of female body in EDSA contents injurious to children's well being?</p>
       </div>
     </article>

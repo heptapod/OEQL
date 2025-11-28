@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About - Yeonhee Choi</title>
-  <meta name="description" content="About Yeonhee Choi" />
+  <title>Publications - Yeonhee Choi</title>
+  <meta name="description" content="Publications - Yeonhee Choi" />
   <meta name="color-scheme" content="light" />
   <style>
     /* Base reset */
@@ -31,41 +31,40 @@
 
     .footer { font-size: 14px; font-weight: 300; }
 
-    .about-title { font-size: 32px; font-weight: bold; margin-bottom: 40px; }
+    .page-title { font-size: 32px; font-weight: bold; margin-bottom: 30px; }
 
-    .content-text { font-size: 16px; line-height: 1.8; margin-bottom: 40px; color: #333; }
+    .research-links { margin-bottom: 60px; font-size: 14px; }
 
-    .content-text p { margin-bottom: 20px; }
+    .research-links a { color: #000; text-decoration: none; margin-right: 15px; transition: opacity 0.25s ease; }
 
-    .spacer { height: 20px; }
-
-    .profile-image-about { width: 360px; height: 360px; border-radius: 50%; object-fit: cover; margin: 0 auto 60px; display: block; }
-
-    .metoo-images { display: flex; gap: 20px; justify-content: center; align-items: center; margin-bottom: 0; flex-wrap: wrap; position: relative; }
-
-    .metoo-circle { border-radius: 50%; object-fit: cover; border: 1px solid #e6e6e6; position: relative; }
-
-    .metoo-circle:nth-child(1) { width: 150px; height: 150px; }
-
-    .metoo-circle:nth-child(2) { width: 240px; height: 240px; }
-
-    .metoo-circle:nth-child(3) { width: 120px; height: 120px; margin-top: 120px; }
-
-    .metoo-circle:nth-child(4) { width: 165px; height: 165px; margin-top: -30px; }
-
-    .photos-intro { font-size: 16px; margin-bottom: 60px; font-weight: 300; }
+    .research-links a:hover { opacity: 0.65; }
 
     .section { margin-bottom: 60px; }
 
     .section-title { font-size: 18px; font-weight: bold; margin-bottom: 30px; }
 
-    .content-text a { color: #000; text-decoration: none; }
+    .publication-item { margin-bottom: 30px; }
 
-    .content-text a:hover { opacity: 0.65; }
+    .publication-title { font-size: 16px; font-weight: normal; margin-bottom: 12px; line-height: 1.6; }
+
+    .publication-info { font-size: 14px; color: #666; margin-bottom: 12px; font-weight: 300; }
+
+    .publication-link { font-size: 14px; }
+
+    .publication-link a { color: #000; text-decoration: none; }
+
+    .publication-link a:hover { opacity: 0.65; }
+
+    .presentations-gallery { display: flex; gap: 30px; justify-content: center; flex-wrap: wrap; }
+
+    .presentation-item { flex: 0 1 calc(25% - 22.5px); min-width: 150px; }
+
+    .presentation-item img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 4px; }
+
+    .presentation-caption { font-size: 12px; margin-top: 12px; line-height: 1.4; text-align: center; }
 
     @media (max-width: 768px) {
       body { padding: 40px 20px; }
-      .metoo-images { gap: 15px; }
     }
   </style>
 </head>
@@ -76,39 +75,64 @@
 
   <hr class="top-divider" />
 
-  <h1 class="page-title">About</h1>
-  <img class="profile-image-about" src="profile1.jpg" alt="Yeonhee Choi profile photo" />
+  <h1 class="page-title">Publications and Presentations</h1>
+
+  <div class="research-links">
+    <a href="https://orcid.org/0009-0002-4506-5302" target="_blank" rel="noopener noreferrer">[ORCID]</a>
+    <a href="https://scholar.google.com/citations?user=1PmcFVkAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">[Google Scholar]</a>
+  </div>
 
   <section class="section">
-    <h2 class="section-title">My dream</h2>
+    <h2 class="section-title">Conference Proceedings</h2>
 
-    <div class="content-text">
-      <p>I'm a design researcher who is expected to graduate from Goldsmiths, University of London in Jan 2026 with Distinction. It was a rocky journey where I could grow and become resilience.</p>
-
-      <p>During the MA, I completed three interdisciplinary projects where art, design, science and engineering are entangled. These projects are based on my long-term commitment in finding answers and tangible solutions in the question below, which was inspired by the #MeToo movement I experienced in New York City, in 2017.</p>
-
-      <p>I have worked as multimedia artist and technical translator working at SBS, (Seoul Broadcasting System), Samsung, and conferences and symposiums such as TED, I'd like to share this inspiring TEDxNYC talk I transalted.</p>
+    <div class="publication-item">
+      <div class="publication-title">Touching Hope and Safety: Designing Interactive Puzzles for Children's Healing and Empowerment after Trauma</div>
+      <div class="publication-info">Yeonhee Choi. IDC '25: Interaction Design and Children, Reykjavik, Iceland, June 23, 2025</div>
+      <div class="publication-link">
+        <a href="https://dl.acm.org/doi/pdf/10.1145/3713043.3731532" target="_blank" rel="noopener noreferrer">[publisher]</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+      </div>
     </div>
 
-    <div class="spacer"></div>
-
-    <div class="metoo-images">
-      <img class="metoo-circle" src="metoo1.jpg" alt="MeToo project image 1" />
-      <img class="metoo-circle" src="metoo2.jpg" alt="MeToo project image 2" />
-      <img class="metoo-circle" src="metoo3.jpg" alt="MeToo project image 3" />
-      <img class="metoo-circle" src="metoo4.jpg" alt="MeToo project image 4" />
+    <div class="publication-item">
+      <div class="publication-title">Overcoming Educational Barriers: Integrating Physical Computing with Wood Jigsaw Puzzles for an Interactive, Multi-Sensory, and Playable Learning</div>
+      <div class="publication-info">Yeonhee Choi. Proceedings of the International Symposium on Electronic/Emerging Art: 2025, Art Center Nabi, Institute for Culture and Arts (ICA) Seoul National University, July 25, 2025</div>
+      <div class="publication-link">
+        <a href="https://data.doi.or.kr/10.23362/KOEN2025.07.25.3.189" target="_blank" rel="noopener noreferrer">[publisher]</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+      </div>
     </div>
   </section>
 
   <section class="section">
-    <h2 class="section-title">More about me</h2>
+    <h2 class="section-title">Late-Breaking Poster</h2>
 
-    <div class="content-text">
-      <p>I'm a slow but steady runner who loves fartlek LSD, running outside seeing, smelling, touching, and listening to nature. I have finished 5km, 10km, and half(21.1km) marathon races, preparing myself for my very first full(42.2km) marathon coming in January 2026. I can't wait to run enjoying the scenery of Ishigaki Island's sea.</p>
+    <div class="publication-item">
+      <div class="publication-title">Trauma-Informed Design for Neurodivergent Individuals and Survivors of Gendered Trauma: Play-Based Toolkit for Inclusive Practices</div>
+      <div class="publication-info">Yeonhee Choi. 41st Annual Meeting of the International Society for Traumatic Stress Studies, September 20, 2025</div>
+    </div>
+  </section>
 
-      <p>I'm also a licensed free diver who can hold my breath for a maximum of 2 minutes and 45 seconds underwater, and dive to a depth of 11 meters. As the depth increases, pressure intensifies and fear naturally grows. Overcoming it and reaching the bottom, then looking up at the shining light filtering through the water—that is the best moment.</p>
+  <section class="section">
+    <h2 class="section-title">Related Presentations, Talks, and Exhibitions</h2>
 
-      <p>I love reading, and I've been a bookworm since childhood, even reading while walking. If I wasn't reading, I was building imaginary cities with my Lego blocks. As an adult, my favorite places to read and imagine are libraries and under trees. Most recently, I have been reading <a href="#" target="_blank" rel="noopener noreferrer">this paper</a>.</p>
+    <div class="presentations-gallery">
+      <div class="presentation-item">
+        <img src="talk4.jpg" alt="If games are the answer" />
+        <p class="presentation-caption">[Exhibition] If Games Are The Answer, What Was The Question?, London, UK</p>
+      </div>
+      <div class="presentation-item">
+        <img src="talk3.jpg" alt="ISTSS 25" />
+        <p class="presentation-caption">[LBP Presentation] Frontiers in Traumatic Stress: Global Perspective and Creative Solutions, ISTSS 25, Baltimore, MD, USA</p>
+      </div>
+      <div class="presentation-item">
+        <img src="talk2.jpg" alt="ACM Interaction Design and Children 25" />
+        <p class="presentation-caption">[Lightning Talk and Poster Presentation] ACM Interaction Design and Children 25, Reykjavík, Iceland</p>
+      </div>
+      <div class="presentation-item">
+        <img src="talk1.jpg" alt="ISEA 25 ArtxTech" />
+        <p class="presentation-caption">[Poster Presentation] ArtxTech Barriers and Alienation, ISEA 25, Seoul, S.Korea</p>
+      </div>
     </div>
   </section>
 

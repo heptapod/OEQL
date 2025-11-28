@@ -33,8 +33,6 @@
 
     .about-title { font-size: 32px; font-weight: bold; margin-bottom: 40px; }
 
-    .profile-image-about { width: 360px; height: 360px; border-radius: 50%; object-fit: cover; margin: 0 auto 60px; display: block; }
-
     .content-text { font-size: 16px; line-height: 1.8; margin-bottom: 40px; color: #333; }
 
     .content-text p { margin-bottom: 20px; }
@@ -55,6 +53,14 @@
 
     .photos-intro { font-size: 16px; margin-bottom: 60px; font-weight: 300; }
 
+    .section { margin-bottom: 60px; }
+
+    .section-title { font-size: 18px; font-weight: bold; margin-bottom: 30px; }
+
+    .content-text a { color: #000; text-decoration: none; }
+
+    .content-text a:hover { opacity: 0.65; }
+
     @media (max-width: 768px) {
       body { padding: 40px 20px; }
       .metoo-images { gap: 15px; }
@@ -68,33 +74,41 @@
 
   <hr class="top-divider" />
 
-  <h1 class="about-title">About</h1>
+  <h1 class="page-title">About</h1>
   <img class="profile-image-about" src="profile1.jpg" alt="Yeonhee Choi profile photo" />
 
-  <div class="content-text">
-    <p>I'm a design researcher who is expected to graduate from Goldsmiths, University of London in Jan 2026 with Distinction. It was a rocky journey where I could grow and become resilience.</p>
+  <section class="section">
+    <h2 class="section-title">My dream</h2>
 
-    <p>During the MA, I completed three interdisciplinary projects where art, design, science and engineering are entangled. These projects are based on my long-term commitment in finding answers and tangible solutions in the question below, which was inspired by the #MeToo movement I experienced in New York City, in 2017.</p>
-  </div>
+    <div class="content-text">
+      <p>I'm a design researcher who is expected to graduate from Goldsmiths, University of London in Jan 2026 with Distinction. It was a rocky journey where I could grow and become resilience.</p>
 
-  <div class="spacer"></div>
+      <p>During the MA, I completed three interdisciplinary projects where art, design, science and engineering are entangled. These projects are based on my long-term commitment in finding answers and tangible solutions in the question below, which was inspired by the #MeToo movement I experienced in New York City, in 2017.</p>
 
-  <div class="metoo-images">
-    <img class="metoo-circle" src="metoo1.jpg" alt="MeToo project image 1" />
-    <img class="metoo-circle" src="metoo2.jpg" alt="MeToo project image 2" />
-    <img class="metoo-circle" src="metoo3.jpg" alt="MeToo project image 3" />
-    <img class="metoo-circle" src="metoo4.jpg" alt="MeToo project image 4" />
-  </div>
+      <p>I have worked as multimedia artist and technical translator working at SBS, (Seoul Broadcasting System), Samsung, and conferences and symposiums such as TED, I'd like to share this inspiring TEDxNYC talk I transalted.</p>
+    </div>
 
-  <div class="content-text">
-    <p>I have worked as multimedia artist and technical translator working at SBS, (Seoul Broadcasting System), Samsung, and conferences and symposiums such as TED, I'd like to share this inspiring TEDxNYC talk I transalted.</p>
+    <div class="spacer"></div>
 
-    <p>Ok, I'm a slow but steady runner who loves fartlek LSD, running outside seeing, smelling, touching, and listening to nature. I have finished 5k, 10k, and half(21.1k) marathon races, preparing myself for my very first full(42.2k) marathon coming in January 2026. Can wait to run enjoying the scenery of Ishigaki sea.</p>
+    <div class="metoo-images">
+      <img class="metoo-circle" src="metoo1.jpg" alt="MeToo project image 1" />
+      <img class="metoo-circle" src="metoo2.jpg" alt="MeToo project image 2" />
+      <img class="metoo-circle" src="metoo3.jpg" alt="MeToo project image 3" />
+      <img class="metoo-circle" src="metoo4.jpg" alt="MeToo project image 4" />
+    </div>
+  </section>
 
-    <p>I'm also a free diver who can hold my breath for 2:45 sec underwater, and dive to 10 meter.</p>
+  <section class="section">
+    <h2 class="section-title">More about me</h2>
 
-    <p>I've been always a bookworm till my childhood being a child even reading while walking, and libraries are my all time favorite place to go.</p>
-  </div>
+    <div class="content-text">
+      <p>I'm a slow but steady runner who loves fartlek LSD, running outside seeing, smelling, touching, and listening to nature. I have finished 5km, 10km, and half(21.1km) marathon races, preparing myself for my very first full(42.2km) marathon coming in January 2026. I can't wait to run enjoying the scenery of Ishigaki Island's sea.</p>
+
+      <p>I'm also a licensed free diver who can hold my breath for a maximum of 2 minutes and 45 seconds underwater, and dive to a depth of 11 meters. As the depth increases, pressure intensifies and fear naturally grows. Overcoming it and reaching the bottom, then looking up at the shining light filtering through the water—that is the best moment.</p>
+
+      <p>I love reading, and I've been a bookworm since childhood, even reading while walking. If I wasn't reading, I was building imaginary cities with my Lego blocks. As an adult, my favorite places to read and imagine are libraries and under trees. Most recently, I have been reading <a href="#" target="_blank" rel="noopener noreferrer">this paper</a>.</p>
+    </div>
+  </section>
 
   <hr class="footer-divider" />
 

@@ -3,11 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Yeonhee Choi</title>
-  <meta name="description" content="Yeonhee Choi – Playful Digital-Physical HCI, XR & Tangible Interfaces, Trauma-/Neurodiversity-informed Inclusive Design" />
-  <meta property="og:title" content="Yeonhee Choi – Portfolio" />
-  <meta property="og:description" content="Playful Digital-Physical HCI | XR & Tangible Interfaces | Trauma-/Neurodiversity-informed Inclusive Design" />
-  <meta property="og:type" content="website" />
+  <title>Projects - Yeonhee Choi</title>
+  <meta name="description" content="Projects - Yeonhee Choi" />
   <meta name="color-scheme" content="light" />
   <style>
     /* Base reset */
@@ -24,129 +21,94 @@
       margin: 0 auto;
     }
 
-    h1 { font-size: 48px; font-weight: bold; margin-bottom: 40px; letter-spacing: -0.02em; }
+    .back-link { font-size: 14px; margin-bottom: 60px; }
+    .back-link a { color: #000; text-decoration: none; }
+    .back-link a:hover { opacity: 0.65; }
 
-    header { display: block; margin-bottom: 40px; }
+    .top-divider { border: none; border-top: 1px solid #000; margin: 40px 0 60px 0; }
 
-    .keywords { font-size: 18px; margin-bottom: 60px; font-weight: 300; line-height: 1.8; }
-
-    main { margin-top: 60px; }
-
-    .profile-image { width: 360px; height: 360px; border-radius: 50%; object-fit: cover; margin-bottom: 30px; margin-top: 0; float: right; margin-left: 40px; }
-
-    .description { font-size: 16px; margin-bottom: 60px; line-height: 1.8; font-weight: 300; max-width: 860px; }
-
-    .image-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-bottom: 60px; width: 100%; max-width: none; }
-
-    .project-item { display: flex; flex-direction: column; }
-
-    .project-title { font-size: 18px; font-weight: bold; margin-bottom: 12px; line-height: 1.4; letter-spacing: 0.01em; min-height: 2.8em; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-
-    .project-description { font-size: 14px; line-height: 1.6; color: #666; font-weight: 300; }
-
-    .image-link { width: 100%; aspect-ratio: 1.5 / 1; background-color: #f7f7f7; border: 1px solid #e6e6e6; display: block; overflow: hidden; border-radius: 8px; }
-
-    .project-card { display: flex; flex-direction: column; gap: 12px; text-decoration: none; color: inherit; cursor: pointer; transition: opacity 0.25s ease; }
-    .project-card:hover { opacity: 0.78; }
-
-    .image-link:hover { opacity: 0.78; }
-
-    .image-link img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .footer-divider { border: none; border-top: 1px solid #000; margin: 60px 0; }
 
     .footer { font-size: 14px; font-weight: 300; }
-    .footer a { color: #000; text-decoration: underline; }
-    .footer a:hover { opacity: 0.65; }
+
+    .projects-title { font-size: 32px; font-weight: bold; margin-bottom: 60px; }
+
+    .image-grid { display: flex; flex-direction: column; gap: 40px; margin-bottom: 60px; width: 100%; max-width: none; }
+
+    .project-item { display: flex; flex-direction: row; gap: 30px; align-items: flex-start; }
+
+    .project-content { flex: 1; }
+
+    .project-image-wrapper { flex-shrink: 0; min-width: 250px; max-width: 280px; }
+
+    .project-image { width: 100%; height: auto; display: block; border: 1px solid #e6e6e6; border-radius: 8px; }
+
+    .project-title { font-size: 18px; font-weight: bold; margin-bottom: 12px; line-height: 1.4; letter-spacing: 0.01em; }
+
+    .project-title-link { text-decoration: none; color: inherit; }
+
+    .project-title-link:hover { opacity: 0.65; }
+
+    .project-description { font-size: 16px; line-height: 1.8; color: #333; font-weight: 300; }
 
     @media (max-width: 768px) {
       body { padding: 40px 20px; }
-      h1 { font-size: 36px; }
-      .image-grid { grid-template-columns: 1fr; gap: 30px; max-width: none; }
+      .project-item { flex-direction: column; gap: 20px; }
+      .project-image-wrapper { min-width: auto; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Yeonhee Choi</h1>
-    <img class="profile-image" src="profile.jpg" alt="Yeonhee Choi profile photo" />
-  </header>
-
-  <div class="keywords">
-    Playful Digital-Physical HCI<br />
-    XR & Tangible Interfaces<br />
-    Trauma-Informed, Neurodiversity-Informed Inclusive Design
+  <div class="back-link">
+    <a href="index.html">← Back</a>
   </div>
 
-  <main>
-    <section aria-label="About" class="about-section">
-      <p class="description">
-        I am a practice-based HCI researcher and designer exploring the intersection of neurodiversity, complex trauma, and community-based participatory design for education, mental health care, and forensic interviewing. My work focuses on trauma-informed and neurodiversity-informed inclusive design, investigating pathways to post-trauma recovery and empowerment of child and adult survivors. I create play-based tangible toolkits using physical computing, XR, and digital fabrication technologies, embracing digital-physical hybridity to enable safe, sensory-rich, and embodied engagement.
-      </p>
-    </section>
+  <hr class="top-divider" />
 
-    <section aria-label="Projects" class="image-grid">
-      <article class="project-item">
-        <a class="project-card" href="https://oeqs.itch.io/you-will-know-me" target="_blank" rel="noopener noreferrer">
+  <h1 class="projects-title">Projects</h1>
+
+  <section aria-label="Projects" class="image-grid">
+    <article class="project-item">
+      <div class="project-image-wrapper">
+        <img class="project-image" alt="You Will Know Me project image" src="you-will-know-me.jpg">
+      </div>
+      <div class="project-content">
+        <a class="project-title-link" href="you-will-know-me.html">
           <h2 class="project-title">You Will Know Me: From Silence to Story</h2>
-          <div class="image-link">
-            <img id="img1" alt="You Will Know Me project image" loading="lazy" decoding="async"
-                 src="you-will-know-me.jpg" />
-          </div>
         </a>
         <p class="project-description">A multi-sensory interactive puzzle combining physical wooden components with digital interaction, designed through participatory co-design for trauma-informed healing and empowerment.</p>
-      </article>
+      </div>
+    </article>
 
-      <article class="project-item">
-        <a class="project-card" href="https://heptapod.github.io/Yeonhee.C/" target="_blank" rel="noopener noreferrer">
+    <article class="project-item">
+      <div class="project-image-wrapper">
+        <img class="project-image" alt="Wish You Were Here XR project image" src="wish-you-were-here.jpg">
+      </div>
+      <div class="project-content">
+        <a class="project-title-link" href="wish-you-were-here.html">
           <h2 class="project-title">Wish You Were Here XR: Invisible Emergencies</h2>
-          <div class="image-link">
-            <img id="img2" alt="Wish You Were Here XR project image" loading="lazy" decoding="async"
-                 src="wish-you-were-here.jpg" />
-          </div>
         </a>
         <p class="project-description">Interactive Augmented Reality experience connected with physical stimuli, designed as an accessible XR-based tool for managing sensory overload and trauma-related crises.</p>
-      </article>
+      </div>
+    </article>
 
-      <article class="project-item">
-        <a class="project-card" href="https://docs.google.com/document/d/19Bqme7t1mrQe3FzpXcik-IaoTb_ZLRPuJL2CqDTXGkc/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">
+    <article class="project-item">
+      <div class="project-image-wrapper">
+        <img class="project-image" alt="Pruney Fingers project image" src="pruney-fingers.jpg">
+      </div>
+      <div class="project-content">
+        <a class="project-title-link" href="pruney-fingers.html">
           <h2 class="project-title">Pruney Fingers: An Old Tale of Us</h2>
-          <div class="image-link">
-            <img id="img3" alt="Pruney Fingers project image" loading="lazy" decoding="async"
-                 src="pruney-fingers.jpg" />
-          </div>
         </a>
-        <p class="project-description">A multi-sensory, trans-media, and interactive storybook where you see the world through the eyes of a brave and curious girl hitting puberty while dealing with her trauma. She is conducting her very first research and it's rocky.</p>
-      </article>
-    </section>
-  </main>
+        <p class="project-description">Access to information of my body, denied. Is representation of female body in EDSA contents injurious to children's well being?</p>
+      </div>
+    </article>
+  </section>
 
-  <footer class="footer" aria-label="Footer">
-    CV is provided upon request, and <a href="about.html">here</a>'s more about me
+  <hr class="footer-divider" />
+
+  <footer class="footer">
+    © Yeonhee Choi, 2025
   </footer>
-
-
-
-
-  <script>
-    (function() {
-      const q = new URLSearchParams(window.location.search);
-      const els = [document.getElementById('img1'), document.getElementById('img2'), document.getElementById('img3')];
-
-      // Querystring override (?img1=URL&img2=URL&img3=URL)
-      els.forEach((img, i) => {
-        if (!img) return;
-        const key = `img${i+1}`;
-        const url = q.get(key);
-        if (url) img.src = url;
-      });
-
-      // LocalStorage override
-      els.forEach((img, i) => {
-        if (!img) return;
-        const key = `yc_local_img_${i+1}`;
-        const saved = localStorage.getItem(key);
-        if (saved) img.src = saved;
-      });
-    })();
-  </script>
 </body>
 </html>
